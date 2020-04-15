@@ -4,7 +4,10 @@
 
 *	This lab is origin from the GitHub repository for the AZ-300, Microsoft Azure Architect Technologies , and AZ-301, Microsoft Azure Architect Design, courses.
 
-*	It is used for online demostration through YouTube OncloudLab and let everyone can follow the automated scrupted.
+*	It is used for online demostration through YouTube OnCloudLab and let everyone can follow the automated scrupted.
+
+*   [Lab 1: Exploring Monitoring Capabilities in Azure](Instructions/AZ-300T01_Lab_Mod01_Exploring%20Monitoring%20Capabilities%20in%20Azure.md)
+
 
 **How are we doing?**
 
