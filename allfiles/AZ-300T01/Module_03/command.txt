@@ -1,0 +1,23 @@
+RG=$(az group create --name az3000301-LabRG --location East-Asia)
+AAD_SP=$(az ad sp create-for-rbac)
+CLIENT_ID=$(echo $AAD_SP | jq -r .appId)
+CLIENT_SECRET=$(echo $AAD_SP | jq -r .password)
+TENANT_ID=$(echo $AAD_SP | jq -r .tenant)
+SUBSCRIPTION_ID=$(az account show --query id | tr -d '"')
+LOCATION=$(echo $RG | jq -r .location)
+
+sed -i.bak1 's/"$CLIENT_ID"/"'"$CLIENT_ID"'"/' ~/template03.json
+sed -i.bak2 's/"$CLIENT_SECRET"/"'"$CLIENT_SECRET"'"/' ~/template03.json
+sed -i.bak3 's/"$TENANT_ID"/"'"$TENANT_ID"'"/' ~/template03.json
+sed -i.bak4 's/"$SUBSCRIPTION_ID"/"'"$SUBSCRIPTION_ID"'"/' ~/template03.json
+sed -i.bak5 's/"$LOCATION"/"'"$LOCATION"'"/' ~/template03.json
+
+packer build template03.json
+
+
+az vm create --resource-group az3000301-LabRG --name az3000301-vm --image az3000301-image --admin-username student --generate-ssh-keys
+az vm open-port --resource-group az3000301-LabRG --name az3000301-vm --port 80
+az network public-ip show --resource-group az3000301-LabRG --name az3000301-vmPublicIP --query ipAddress
+
+az group list --query "[?starts_with(name,'az3000301')]".name --output tsv
+az group list --query "[?starts_with(name,'az3000301')]".name --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'

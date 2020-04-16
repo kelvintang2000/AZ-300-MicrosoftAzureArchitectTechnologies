@@ -143,6 +143,8 @@ The main tasks for this exercise are as follows:
 
 1. Validate Azure VM deployment
 
+1. Download an Azure VM image
+
 #### Task 1: Deploy an Azure VM based on a custom image
 
 1. From the Cloud Shell pane, run the following to deploy an Azure VM based on the custom image.
@@ -174,6 +176,29 @@ The main tasks for this exercise are as follows:
 1. Verify that Microsoft Edge displays the **Welcome to nginx!** page.
 
 > **Result**: After you completed this exercise, you have deployed an Azure VM based on a custom image and validated the deployment.
+
+#### Task 3: Download Azure VM image
+
+1. Stop the VM. A VHD can’t be downloaded from Azure if it's attached to a running VM. You need to stop the VM to download a VHD.
+
+1. On the Hub menu in the Azure portal, click Virtual Machines.
+
+   ```Select the VM from the list.
+     On the blade for the VM, click Stop.
+   ```
+
+1. Generate download URL. To download the VHD file, you need to generate a shared access signature (SAS) URL. When the URL is generated, an expiration time is assigned to the URL.
+
+
+   ```On the page for the VM, click Disks in the left menu.
+   Select the operating system disk for the VM.
+   On the page for the disk, select Disk Export from the left menu.
+   The default expiration time of the URL is 3600 seconds. Increase this to 36000 for Windows OS disks.
+   Click Generate URL.
+   ```
+
+1. Download VHD. Under the URL that was generated, click Download the VHD file. You may need to click Save in your browser to start the download. The default name for the VHD file is abcd.
+
 
 ## Exercise 3: Remove lab resources
 
