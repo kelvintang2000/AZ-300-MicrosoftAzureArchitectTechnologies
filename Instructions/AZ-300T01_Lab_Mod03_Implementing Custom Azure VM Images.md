@@ -183,19 +183,16 @@ The main tasks for this exercise are as follows:
 
 1. On the Hub menu in the Azure portal, click Virtual Machines.
 
-   ```Select the VM from the list.
-     On the blade for the VM, click Stop.
-   ```
+   - Select the VM from the list.
+   - On the blade for the VM, click Stop.
 
 1. Generate download URL. To download the VHD file, you need to generate a shared access signature (SAS) URL. When the URL is generated, an expiration time is assigned to the URL.
+   -  On the page for the VM, click Disks in the left menu.
+   -  Select the operating system disk for the VM.
+   -  On the page for the disk, select Disk Export from the left menu.
+   -  The default expiration time of the URL is 3600 seconds. Increase this to 36000 for Windows OS disks.
+   -  Click Generate URL.
 
-
-   ```On the page for the VM, click Disks in the left menu.
-   Select the operating system disk for the VM.
-   On the page for the disk, select Disk Export from the left menu.
-   The default expiration time of the URL is 3600 seconds. Increase this to 36000 for Windows OS disks.
-   Click Generate URL.
-   ```
 
 1. Download VHD. Under the URL that was generated, click Download the VHD file. You may need to click Save in your browser to start the download. The default name for the VHD file is abcd.
 
