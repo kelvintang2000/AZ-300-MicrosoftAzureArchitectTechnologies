@@ -8,6 +8,8 @@
 
 *   [Lab 1: Exploring Monitoring Capabilities in Azure](Instructions/AZ-300T01_Lab_Mod01_Exploring%20Monitoring%20Capabilities%20in%20Azure.md)
 
+*   [Lab 2: Deploying and Managing Virtual Machines (VMs)](Instructions/AZ-300T01_Lab_Mod03_Implementing%20Custom%20Azure%20VM%20Images.md)
+
 
 **How are we doing?**
 
