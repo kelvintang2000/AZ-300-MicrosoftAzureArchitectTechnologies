@@ -10,11 +10,13 @@
 
 *   [Lab 2: Deploying and Managing Virtual Machines (VMs)](Instructions/AZ-300T01_Lab_Mod03_Implementing%20Custom%20Azure%20VM%20Images.md)
 
-*   [Lab 3: Implementing user-assigned managed identities for Azure resources](Instructions/AZ-300T01_Lab_Mod03_Implementing%20user-assigned%20managed%20identities%20for%20Azure%20resources.md)
+*   [Lab 3: Implementing user-assigned managed identities for Azure resources](Instructions/AZ-300T01_Lab_Mod05_Implementing%20user-assigned%20managed%20identities%20for%20Azure%20resources.md)
 
-*   [Lab 4: Implementing Azure to Azure Migration](Instructions/AZ-300T01_Lab_Mod03_Implementing%20Azure%20to%20Azure%20migration.md)
+*   [Lab 4: Implementing Azure to Azure Migration](Instructions/AZ-300T02_Lab_Mod03_Implementing%20Azure%20to%20Azure%20migration.md)
 
-*   [Lab 5: Configuring VNet Peering and Service Chaining](Instructions/AZ-300T01_Lab_Mod03_Configuring%20VNet%20peering%20and%20service%20chaining.md)
+*   [Lab 5: Configuring VNet Peering and Service Chaining](Instructions/AZ-300T02_Lab_Mod03_Configuring%20VNet%20peering%20and%20service%20chaining.md)
+
+*   [Lab 6: Implementing Azure Storage access controls](Instructions/AZ-300T03_Lab_Mod01_Implementing%20Azure%20Storage%20access%20controls.md)
 
 
 **How are we doing?**
