@@ -44,7 +44,7 @@ The main tasks for this exercise are as follows:
 
    - Resource group: the name of a new resource group **az3000100-LabRG**
 
-   - Storage account: a name of a new storage account (between 3 and 24 characters consisting of lower case letters and digits)
+   - Storage account: a name of a new storage account (between **3 and 24 characters** consisting of **lower case letters and digits**)
 
    - File share: a name of a new file share: **cloudshell**
 
@@ -53,6 +53,7 @@ The main tasks for this exercise are as follows:
    ```pwsh
    Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
    ```
+   - For example: Test-AzDnsAvailability -DomainNameLabel az300lab1 -Location 'Southeast Asia'
 
 1. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 
@@ -62,7 +63,7 @@ The main tasks for this exercise are as follows:
 
    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkelvintang2000%2FAZ-300-MicrosoftAzureArchitectTechnologies%2Fmaster%2Fallfiles%2FAZ-300T01%2FModule_01%2Fazuredeploy.json" target="_blank">
    <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/></a>
-   
+
    <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fkelvintang2000%2FAZ-300-MicrosoftAzureArchitectTechnologies%2Fmaster%2Fallfiles%2FAZ-300T01%2FModule_01%2Fazuredeploy.json" target="_blank">
    <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.png"/></a>
 
