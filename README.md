@@ -18,6 +18,13 @@
 
 *   [Lab 6: Implementing Azure Storage access controls](Instructions/AZ-300T03_Lab_Mod01_Implementing%20Azure%20Storage%20access%20controls.md)
 
+*   [Lab 7: Implementing Azure Load Balancer Standard](Instructions/AZ-300T03_Lab_Mod03_Implementing%20Azure%20Load%20LBalancer%20LStandard.md)
+
+*   [Lab 8: Implementing custom Role Based Access Control (RBAC) roles](Instructions/AZ-300T03_Lab_Mod04_Implementing%20custom%20Role%20Based%20Access%20Control%20roles.md)
+
+*   [Lab 9: Implementing Azure Logic Apps](Instructions/AZ-300T04_Lab_Mod01_Implementing%20Azure%20Logic%20Apps.md)
+
+*   [Lab 10: Configuring a Message-Based Integration Architecture](Instructions/AZ-300T06_Lab_Mod01_Configuring%20a%20Message-Based%20Integration%20Architecture.md)
 
 **How are we doing?**
 
