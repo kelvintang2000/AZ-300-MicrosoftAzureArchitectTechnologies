@@ -4,7 +4,7 @@
   "parameters": {
     "vmSku": {
       "type": "string",
-      "defaultValue": "Standard_D1_v2",
+      "defaultValue": "Standard_D2_v3",
       "metadata": {
         "description": "Size of VMs in the VM Scale Set."
       }
@@ -250,8 +250,8 @@
                   "autoUpgradeMinorVersion": true,
                   "settings": {
                     "fileUris": [
-                      "https://raw.githubusercontent.com/kelvintang2000/AZ-300-MicrosoftAzureArchitectTechnologies/allfiles/AZ-300T01/Module_01/installserver.sh",
-                      "https://raw.githubusercontent.com/kelvintang2000/AZ-300-MicrosoftAzureArchitectTechnologies/allfiles/AZ-300T01/Module_01/workserver.py"
+                      "https://raw.githubusercontent.com/kelvintang2000/AZ-300-MicrosoftAzureArchitectTechnologies/master/allfiles/AZ-300T01/Module_01/installserver.sh",
+                      "https://raw.githubusercontent.com/kelvintang2000/AZ-300-MicrosoftAzureArchitectTechnologies/master/allfiles/AZ-300T01/Module_01/workserver.py"
                     ],
                     "commandToExecute": "bash installserver.sh"
                   }
