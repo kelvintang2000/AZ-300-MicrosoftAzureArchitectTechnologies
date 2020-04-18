@@ -60,7 +60,7 @@ The main tasks for this exercise are as follows:
 
    ```sh
    For example: 
-   RG=$(az group create --name az3000501-LabRG --location EastUS)
+   az group create --resource-group az3000501-LabRG --location EastUS
    ```
 
 1. From the Cloud Shell pane, upload the Azure Resource Manager template **\\allfiles\\AZ-300T01\\Module_05\\azuredeploy05.json** into the home directory.
