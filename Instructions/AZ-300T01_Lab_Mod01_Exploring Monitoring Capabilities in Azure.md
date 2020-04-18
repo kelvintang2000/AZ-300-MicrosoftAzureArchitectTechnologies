@@ -20,7 +20,7 @@ Estimated Time: 45 minutes
 
 User Name: **Student**
 
-Password: **Pa55w.rd**
+Password: **Pa55w.rd1234**
 
 # Exercise 1: Deploy Azure VM scale sets
 
@@ -175,9 +175,24 @@ The main tasks for this exercise are as follows:
 
 1. Identify the value of the **Public IP address** assigned to the front end of the load balancer associated with the VM scale set.
 
-1. From the lab computer, start Microsoft Edge and browse to **http://_Public IP address_:9000** (where **_Public IP address_** is the IP address you identified in the previous step)
+1. From the lab computer, SSH to your first VM instance. Specify your own public IP address and port number with the -p parameter, as shown from the preceding command:
 
-1. On the **Worker interface** page, click the **Start work** link.
+   ```pwsh
+   ssh student@13.92.224.66 -p 50000
+   ```
+
+1. Once logged in, install the stress utility. Start 10 stress workers that generate CPU load. These workers run for 420 seconds, which is enough to cause the autoscale rules to implement the desired action.
+
+   ```pwsh
+   sudo apt-get -y install stress
+   sudo stress --cpu 10 --timeout 420 &
+   ```
+
+1. To confirm that stress generates CPU load, examine the active system load with the top utility:
+
+   ```pwsh
+   top
+   ```
 
 1. Use the **CPU (average)** chart on the VM scale set Overview blade to monitor changes to the CPU utilization.
 
