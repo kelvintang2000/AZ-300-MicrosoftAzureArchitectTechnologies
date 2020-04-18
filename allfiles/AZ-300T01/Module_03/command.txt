@@ -1,4 +1,4 @@
-RG=$(az group create --name az3000301-LabRG --location East-Asia)
+RG=$(az group create --name az3000301-LabRG --location EastUS)
 AAD_SP=$(az ad sp create-for-rbac)
 CLIENT_ID=$(echo $AAD_SP | jq -r .appId)
 CLIENT_SECRET=$(echo $AAD_SP | jq -r .password)
@@ -13,7 +13,6 @@ sed -i.bak4 's/"$SUBSCRIPTION_ID"/"'"$SUBSCRIPTION_ID"'"/' ~/template03.json
 sed -i.bak5 's/"$LOCATION"/"'"$LOCATION"'"/' ~/template03.json
 
 packer build template03.json
-
 
 az vm create --resource-group az3000301-LabRG --name az3000301-vm --image az3000301-image --admin-username student --generate-ssh-keys
 az vm open-port --resource-group az3000301-LabRG --name az3000301-vm --port 80
