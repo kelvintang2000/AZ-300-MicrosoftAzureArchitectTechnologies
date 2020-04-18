@@ -53,7 +53,7 @@ The main tasks for this exercise are as follows:
    ```pwsh
    Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
    ```
-   - For example: Test-AzDnsAvailability -DomainNameLabel az300lab1 -Location 'Southeast Asia'
+   - For example: Test-AzDnsAvailability -DomainNameLabel az300la01 -Location 'East US'
 
 1. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 

@@ -18,6 +18,7 @@
     },
     "instanceCount": {
       "type": "int",
+      "defaultValue": "1",
       "metadata": {
         "description": "Number of VM instances (100 or less)."
       },
@@ -25,13 +26,14 @@
     },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "Student",
       "metadata": {
         "description": "Admin username on all VMs."
       }
     },
     "authenticationType": {
       "type": "string",
-      "defaultValue": "sshPublicKey",
+      "defaultValue": "password",
       "allowedValues": [
         "sshPublicKey",
         "password"
@@ -42,6 +44,7 @@
     },
     "adminPasswordOrKey": {
       "type": "securestring",
+      "defaultValue": "Pa55w.rd1234",
       "metadata": {
         "description": "SSH Key or password for the Virtual Machine. SSH key is recommended."
       }
@@ -177,7 +180,7 @@
       "type": "Microsoft.Compute/virtualMachineScaleSets",
       "name": "[parameters('vmssName')]",
       "location": "[variables('location')]",
-      "apiVersion": "2017-03-30",
+      "apiVersion": "2019-12-01",
       "dependsOn": [
         "[concat('Microsoft.Network/loadBalancers/', variables('loadBalancerName'))]",
         "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
@@ -279,7 +282,7 @@
             "name": "Profile1",
             "capacity": {
               "minimum": "1",
-              "maximum": "10",
+              "maximum": "4",
               "default": "1"
             },
             "rules": [
