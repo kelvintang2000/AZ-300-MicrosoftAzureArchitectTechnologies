@@ -52,7 +52,8 @@ The main tasks for this exercise are as follows:
    RG=$(az group create --name az3000301-LabRG --location <Azure region>)
    ```
    ```sh
-   For example: RG=$(az group create --name az3000301-LabRG --location EastUS)
+   For example: 
+   RG=$(az group create --name az3000301-LabRG --location EastUS)
    ```
 
    > **Note**: To list Azure regions, run `az account list-locations --output table`
@@ -154,7 +155,7 @@ The main tasks for this exercise are as follows:
 1. From the Cloud Shell pane, run the following to deploy an Azure VM based on the custom image.
 
    ```sh
-   az vm create --resource-group az3000301-LabRG --name az3000301-vm --image az3000301-image --admin-username student --generate-ssh-keys
+   az vm create --resource-group az3000301-LabRG --name az3000301-vm --image az3000301-image --admin-username student --generate-ssh-keys --size Standard_D2_v3
    ```
 
 1. Wait for the deployment to complete
