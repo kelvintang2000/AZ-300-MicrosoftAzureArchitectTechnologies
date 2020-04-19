@@ -97,6 +97,11 @@ The main tasks for this exercise are as follows:
    az group create --resource-group az3000502-LabRG --location <Azure region>
    ```
 
+   ```
+   For example:
+   az group create --resource-group az3000502-LabRG --location Eastus
+   ```
+
 1. In the Azure portal, navigate to the **az3000502-LabRG - Access control (IAM)** blade.
 
 1. From the **az3000502-LabRG - Access control (IAM)** blade, assign the Owner role to the newly created user-assigned managed identity.
@@ -123,10 +128,20 @@ The main tasks for this exercise are as follows:
 
 1. Once you establish a Remote Desktop session, you will be presented with an **Administrator: C:\\Windows\\system32\\cmd.exe** window. To start a PowerShell session, at the command prompt, type `PowerShell` and press Enter.
 
+   ```pwsh
+   PowerShell
+   ```
+
+   ```pwsh
+   Note: PowerShellGet command cannot support Tls3 mode.
+   check for supported protocols by using [Net.ServicePointManager]::SecurityProtocol
+   Setup: [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+   ```
+
 1. From the PowerShell prompt, run the following to install the latest version of the PowerShellGet module (press Enter if prompted for confirmation):
 
    ```pwsh
-   Install-Module -Name PowerShellGet -Force
+   Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
    ```
 
 1. From the PowerShell prompt, run the following to install the latest version of the Az module (type **Y** and press Enter when prompted for confirmation):
@@ -137,7 +152,7 @@ The main tasks for this exercise are as follows:
 
 1. Exit the current PowerShell session by typing `exit` and pressing Enter and then start it again by typing at the command prompt `PowerShell` and pressing Enter.
 
-1. From the PowerShell prompt, run the following to install the AzureRM.ManagedServiceIdentity module:
+1. From the PowerShell prompt, run the following to install the AzureRM.ManagedServiceIdentity module (type **Y** and press Enter when prompted for confirmation):
 
    ```pwsh
    Install-Module -Name Az.ManagedServiceIdentity
