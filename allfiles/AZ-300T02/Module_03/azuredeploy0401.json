@@ -10,14 +10,14 @@
         },
         "vm1Name": {
             "type": "string",
-            "defaultValue": "az3000401lab",
+            "defaultValue": "az3000401lab1",
             "metadata": {
                 "description": "VM name"
             }
         },
         "vm2Name": {
             "type": "string",
-            "defaultValue": "az3000402lab",
+            "defaultValue": "az3000401lab2",
             "metadata": {
                 "description": "VM name"
             }
