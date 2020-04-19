@@ -40,7 +40,7 @@
     "subnetName": "subnet-0",
     "subnetPrefix": "10.0.0.0/24",
     "publicIPAddressName": "az3000501-pip",
-    "vmName": "az3000501-vm",
+    "vmName": "az30005lab",
     "virtualNetworkName": "az3000501-vnet",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "dnsLabelPrefix": "[concat('dns', uniquestring(resourceGroup().id))]",
