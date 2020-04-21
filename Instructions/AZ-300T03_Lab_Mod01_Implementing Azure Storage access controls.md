@@ -53,11 +53,11 @@ The main tasks for this exercise are as follows:
     - Account kind: **Storage (general purpose v1)**
 
     - Replication: **Locally-redundant storage (LRS)**
-    
-    - Secure transfer required: **Disabled**
-
+        
     - Network connectivity: **Public endpoint (All networks)**
 
+    - Secure transfer required: **Disabled**
+    
     - Blob soft delete: **Disabled**
 
     - Data Lake Storage Gen2: **Disabled**
